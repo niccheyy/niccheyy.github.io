@@ -6,10 +6,44 @@
     <title>Document</title>
     <style>
         @import url('styles.css');
+
+        .split-container {
+            display: flex;
+            height: 100vh; /* Adjust height as needed */
+        }
+
+        .text-block {
+            flex: 1;
+            padding: 20px;
+            background-color: #f0f0f0; /* Light background for contrast */
+        }
+
+        .photo-block {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e0e0e0; /* Slightly darker background */
+        }
+
+        .photo-block img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
     <h1>Hello, World!</h1>
     <a href="project1.html">Go to About Page</a>
+
+    <div class="split-container">
+        <div class="text-block">
+            <h2>Hello</h2>
+            <p>This is a description of the photo displayed on the right.</p>
+        </div>
+        <div class="photo-block">
+            <img src="photo.jpg" alt="A description of the photo">
+        </div>
+    </div>
 </body>
 </html>
