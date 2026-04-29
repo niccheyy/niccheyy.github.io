@@ -5,8 +5,8 @@ body {
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  width:flex;
+  margin: 20px,0px,20px,0px;
   overflow: hidden;
   background-color: #333333;
 }
@@ -18,7 +18,7 @@ ul li {
 ul li a {
   display: block;
   color: white;
-  text-align: center;
+  text-align: left;
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -28,7 +28,12 @@ ul li a:hover {
 }
 
 img {
-  width: 50%;
-  max-width: 500px; 
+  width: 100%;
   height: auto;
+}
+
+.image-row {
+}
+
+.image-row img {
 }
