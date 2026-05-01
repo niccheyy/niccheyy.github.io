@@ -7,6 +7,7 @@ h1{
 h2{
     font-size: 24px;
 }
+
 body {
     font-family: "Belleza", sans-serif;
     padding: 20px;
@@ -52,6 +53,11 @@ ul li a:hover {
     background-color: #e3f7fa; /* Light background for contrast */
 }
 
+.text-block-2 h2,p,form{
+    flex: 1;
+    justify-items: center;
+}
+
 .photo-block {
     flex: 1;
 }
@@ -84,6 +90,15 @@ ul li a:hover {
 .image-row img{
     height: 100%;
 }
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 40vb;
+    margin-bottom: 10px;
+}
+
 
 
 
