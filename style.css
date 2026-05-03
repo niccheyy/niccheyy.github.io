@@ -15,7 +15,7 @@ body {
 }
 
 ul {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding: 0; 
   list-style-type: none;
   width:100%;
@@ -39,11 +39,107 @@ ul li a:hover {
   background-color: #111111;
 }
 
+@media (max-width: 300px) {
+  ul li a {
+    size: 10vb;
+  }
+}
 
-.split-container {
+
+  .split-container-index {
+    display: block;
+    position: relative;
+  }
+
+.photo-block-index{
+    flex: 1;
+    position: relative;
+    width: 100%;
+}
+  .photo-block-index img {
+    width: 100%;
+    display: block;
+    overflow: hidden; 
+  }
+
+  .text-block-index {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    
+    color: white;
+    background: rgba(31, 114, 150, 0.7); /* optional readability */
+    padding: 10px 15px;
+    border-radius: 4px;
+  }
+
+.text-block-index text{
+    font-size: smaller;
+  }
+
+@media (min-width: 600px) {
+  .text-block-index {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .text-block-index text{
+    font-size: larger;
+  }
+}
+
+@media(max-width:280px){
+    .text-block-index {
+    display: none;
+  }
+}
+
+.split-container-illustration {
     display: flex;
     width: 100%;
+    gap: 5px; 
+    margin-bottom:5px;
+    min-height: 100vh;
+}
+
+@media (max-width: 600px) {
+  .split-container-illustration {
+    flex-direction: column;
+  }
+
+  .split-container-illustration img {
+    width: 100%;
+  }
+}
+
+.split-container-comic {
+    display: flex;
+    width: 100%;
+    flex-direction:row;
+    margin-bottom:5px;
     height: 100vh;
+}
+.split-container-comic img {
+    height:100%;
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: nowrap;      /* forces single row */
+    overflow-x: auto;       /* horizontal scroll */
+    overflow-y: hidden;     /* clip vertical overflow */
+    height: 100%;           /* or set a fixed height if needed */
+    scrollbar-color: #ADE0ED #e6f4ff;
+    scrollbar-width: thin;
+}
+
+.image-row img {
+    flex: 0 0 auto;         /* prevents shrinking/wrapping */
+    height: 100%;           /* fills container height */
+    width: auto;            /* keeps aspect ratio */
+    display: block;
 }
 
 .text-block {
@@ -86,16 +182,6 @@ ul li a:hover {
     flex: 1;
     margin: 10px;
     padding: 10px;
-}
-.image-row{
-    height: 100%;
-    overflow-x: auto;
-    overflow-y: hidden; 
-    scrollbar-color: #ADE0ED #e6f4ff;
-    scrollbar-width: thin;
-}
-.image-row img{
-    height: 100%;
 }
 
 form input,
