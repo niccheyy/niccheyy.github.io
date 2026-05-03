@@ -2,6 +2,7 @@
 h1{
     font-size: 36px;
     margin-top: 0;
+    color: #1e2a51;
 }
 
 h2{
@@ -10,6 +11,7 @@ h2{
 
 body {
     font-family: "Belleza", sans-serif;
+    color: #1e2a51;
     padding: 20px;
     margin:0;
 }
@@ -20,7 +22,7 @@ ul {
   list-style-type: none;
   width:100%;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #1e2a51;
 }
 
 ul li {
@@ -36,7 +38,7 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: #111111;
+  background-color: #111e32;
 }
 
 @media (max-width: 300px) {
@@ -101,7 +103,6 @@ ul li a:hover {
     width: 100%;
     gap: 5px; 
     margin-bottom:5px;
-    min-height: 100vh;
 }
 
 @media (max-width: 600px) {
@@ -112,6 +113,10 @@ ul li a:hover {
   .split-container-illustration img {
     width: 100%;
   }
+}
+
+.web-box{
+    padding: 2.5%;
 }
 
 .split-container-comic {
@@ -156,18 +161,6 @@ ul li a:hover {
     background-color: #e3f7fa; /* Light background for contrast */
 }
 
-.text-block-2{
-    flex: 1;
-    padding: 20px;
-    align-content: center;
-    background-color: #e3f7fa; /* Light background for contrast */
-}
-
-.text-block-2 h2,p,form{
-    flex: 1;
-    justify-items: center;
-}
-
 .photo-block {
     flex: 1;
 }
@@ -179,26 +172,47 @@ ul li a:hover {
     object-position: top;
 }
 
-.split-container-2 {
+.split-container-contact {
     display: flex;
     width: 100%;
-    height: 300vh;
 }
 
-.photo-block-2 {
+.photo-block-contact {
     flex: 1;
-    margin: 10px;
-    padding: 10px;
+}
+
+.photo-block-contact img{
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.text-block-contact{
+    flex: 1;
+    align-content: center;
+    padding-left: 5%;
+    padding-right:5%;
+    background-color: #e3f7fa; /* Light background for contrast */
+}
+
+.text-block-contact h2,p,form{
+    flex: 1;
 }
 
 form input,
 form textarea,
 form button {
+    font-family: "Belleza", sans-serif;
+    color:#111e32;
     display: block;
-    width: 40vb;
     margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
+@media (max-width: 600px) {
+  .split-container-contact {
+    flex-direction: column;
+  }
+}
 
 
 
