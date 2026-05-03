@@ -125,6 +125,12 @@ ul li a:hover {
     height:100%;
 }
 
+@media (max-width: 600px) {
+  .split-container-comic{
+    height:50vh;
+  }
+}
+
 .image-row {
     display: flex;
     flex-wrap: nowrap;      /* forces single row */
@@ -141,6 +147,7 @@ ul li a:hover {
     width: auto;            /* keeps aspect ratio */
     display: block;
 }
+
 
 .text-block {
     flex: 1;
