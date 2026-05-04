@@ -65,10 +65,7 @@ ul li a:hover {
 
 @media (max-width: 600px) {
   .header a {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    margin: 0;
+    display: none
   }
 }
 
